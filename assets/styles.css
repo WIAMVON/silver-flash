@@ -1,0 +1,116 @@
+/* Basic styles for Silver Flash */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1f2937;
+  --accent-color: #5a67d8;
+  --muted-color: #6b7280;
+  --border-color: #e5e7eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #111827;
+    --text-color: #f3f4f6;
+    --accent-color: #8b5cf6;
+    --muted-color: #9ca3af;
+    --border-color: #374151;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.site-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.site-header .site-nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.site-header .site-nav a:hover {
+  text-decoration: underline;
+}
+
+main h1, main h2, main h3 {
+  color: var(--text-color);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main p {
+  margin: 0.5rem 0;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+li {
+  margin: 0.25rem 0;
+}
+
+.price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+.price-block .price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.price-block .change.up {
+  color: #059669;
+}
+.price-block .change.down {
+  color: #dc2626;
+}
+.price-block .timestamp {
+  font-size: 0.8rem;
+  color: var(--muted-color);
+}
+.sparkline {
+  margin: 0.5rem 0;
+}
+.context p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+.back-home a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.back-home a:hover {
+  text-decoration: underline;
+}
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  margin-top: 2rem;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  color: var(--muted-color);
+}
