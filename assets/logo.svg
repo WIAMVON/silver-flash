@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none">
+  <!-- Lightning bolt icon -->
+  <path d="M10 2 L18 2 L14 14 H22 L8 38 L12 22 H4 L10 2 Z" fill="#6b7280"/>
+  <!-- Text -->
+  <text x="40" y="26" font-family="Arial, sans-serif" font-size="20" fill="#6b7280">Silver Flash</text>
+</svg>
